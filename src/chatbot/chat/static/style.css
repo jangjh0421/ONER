@@ -1,0 +1,129 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pretendard', sans-serif;
+    background: #121212;
+    color: #FFFFFF;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.chatbot {
+    position: relative;
+    max-width: 375px; /* Ensures chatbot is not too wide on larger screens */
+    height: 100vh; /* Full viewport height */
+    margin: 0 auto; /* Centers chatbot in the viewport */
+    display: flex;
+    flex-direction: column; /* Organizes header, chat-area, and footer vertically */
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center; /* Align items in the center vertically */
+    justify-content: center; /* Center content horizontally */
+    padding: 20px;
+    background: #840BCD;
+}
+
+.menu-icon {
+    position: absolute;
+    left: 20px; /* Keeps the icon on the left */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.send-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.title {
+    /* No need for absolute positioning; flexbox takes care of the centering */
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    flex-grow: 1; /* Allows the title to grow and use available space, aiding in centering */
+    text-align: center; /* Ensures the text itself is centered within its container */
+}
+
+.chat-area {
+    flex-grow: 1; /* Allows chat area to take up available space */
+    padding: 20px;
+    overflow-y: auto; /* Enables scrolling for overflow content */
+}
+
+.message {
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #000000;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px; /* Slightly less rounded corners for a modern look */
+}
+
+.date-message {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    align-self: center; /* Centers date message without affecting other chat content */
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Stretches children to match the footer's width */
+    background: rgba(7, 7, 7, 0.95); /* Slightly more opacity for better readability */
+    padding: 15px;
+    gap: 10px; /* Adds space between input box and buttons */
+}
+
+.input-box, .actions {
+    display: flex;
+    justify-content: space-between; /* Aligns input box elements and buttons nicely */
+    
+}
+
+input {
+    flex-grow: 1; /* Allows input to fill available space */
+    margin-right: 10px; /* Ensures space between input and send icon */
+    padding: 10px;
+    border: 1px solid #FFFFFF;
+    border-radius: 25px; /* More consistent border-radius value */
+    background: transparent;
+    color: #FFFFFF;
+}
+
+.actions {
+    justify-content: center; /* Centers buttons for aesthetics */
+    gap: 20px; /* Adds space between buttons */
+}
+
+.option-button {
+    padding: 10px 20px;
+    border: 2px solid #840BCD;
+    border-radius: 25px; /* Matching border-radius with input */
+    background: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex: 1; /* Allows buttons to share available space */
+}
+
+/*
+.send-button {
+    position: absolute;
+    width: 10px;
+    height: 30px;
+    background: #840BCD;
+}
+*/
+
+#send_button_key {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    background: #840BCD;
+}

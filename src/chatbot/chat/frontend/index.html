@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI ChatBot</title>
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+</head>
+<body>
+    <div class="chatbot">
+        <div class="header">
+            <span class="menu-icon">☰</span>
+            <div class="title">AI ONER</div>
+        </div>
+        <div class="chat-area">
+            <div class="date-message">2024년 3월 9일, 오후 07:30</div>
+
+            <div class="message">안녕하세요 황정호 오너님!</div>
+            <div class="message">저는 황정호님을 위한 맞춤형 AI 챗봇입니다.</div>
+            <div class="message">무엇을 도와드릴까요?</div>
+        </div>
+        <div class="footer">
+            <div class="actions">
+                <button class="option-button">아트워크 추천해줘</button>
+                <button class="option-button">주변 전시 추천해줘</button>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="무엇을 도와드릴까요?">
+                <button class="send-button">⬆</button>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'script.js' %}"></script>
+    
+</body>
+</html>
+
+
+
